@@ -19,6 +19,7 @@ session_start();
 if ($success) {
     header('Location: ../home.php');
     $_SESSION['nik'] = $nik;
+    $_SESSION['nama'] = $nama;
 } else {
     $_SESSION['error'] = "NIK atau nama tidak ditemukan!";
 
