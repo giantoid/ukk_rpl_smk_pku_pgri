@@ -8,7 +8,7 @@ $userlist = file('../data/user.txt');
 $success = false;
 foreach ($userlist as $user) {
     $user_details = explode('|', $user);
-    if ($user_details[0] == $nik && $user_details[1] == $nama) {
+    if (trim($user_details[0]) == $nik && trim($user_details[1]) == $nama) {
         $success = true;
         break;
     }
