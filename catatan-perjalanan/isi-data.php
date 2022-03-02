@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 
+<?php
+session_start();
+
+if (!$_SESSION['nik']) {
+    header('Location: ../login.php');
+}
+?>
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">

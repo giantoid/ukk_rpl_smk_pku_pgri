@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 
+<?php
+session_start();
+
+if ($_SESSION['nik']) {
+    header('Location: home.php');
+}
+?>
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -23,7 +31,7 @@
                     </div>
                     <div class="card shadow-lg">
                         <div class="card-body p-5">
-                            <?php session_start();;
+                            <?php
                             if ($_SESSION['success']) { ?>
                                 <div class="alert alert-success d-flex align-items-center" role="alert">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Success:">
