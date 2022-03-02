@@ -33,17 +33,24 @@ if (!$_SESSION['nik']) {
                         <h1>PEDULI DIRI</h1>
                         <h6 class="mt-3">Catatan Perjalanan</h6>
                         <!-- <a href="" class="active">Home</a> | <a href="">Catatan Perjalanan</a> | <a href="">Isi Data</a> -->
-                        <ul class="nav nav-tabs col-lg-10">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="catatan-perjalanan">Catatan Perjalanan</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="catatan-perjalanan/isi-data.php">Isi Data</a>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="catatan-perjalanan">Catatan Perjalanan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="catatan-perjalanan/isi-data.php">Isi Data</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-1">
+                                <a href="process/logout.php" class="btn btn-outline-secondary float-end">Logout</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-10 mt-3">
                         <div class="card" style="height: 20rem;">
