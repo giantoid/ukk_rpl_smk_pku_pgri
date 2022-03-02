@@ -45,7 +45,7 @@
                                 </div>
                             <?php unset($_SESSION['error']);
                             } ?>
-                            <h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
+                            <h1 class="fs-4 card-title fw-bold mb-4 text-center">Login</h1>
                             <form method="POST" action="process/login.php" class="needs-validation" novalidate="" autocomplete="off">
                                 <div class="mb-3">
                                     <label class="mb-2 text-muted" for="nik">NIK</label>
