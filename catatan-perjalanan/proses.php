@@ -18,6 +18,6 @@ fclose($fh);
 
 session_start();
 
-$_SESSION['success'] = "Berhasil membuat akun, silahkan login!";
+$_SESSION['success'] = "Berhasil menyimpan data!";
 
-header('Location: ../login.php');
+header('Location: ../catatan-perjalanan');
