@@ -41,7 +41,7 @@ if (!$_SESSION['nik']) {
                                 <a class="nav-link" href="catatan-perjalanan">Catatan Perjalanan</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Isi Data</a>
+                                <a class="nav-link" href="catatan-perjalanan/isi-data.php">Isi Data</a>
                             </li>
                         </ul>
                     </div>
